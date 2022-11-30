@@ -4,7 +4,7 @@ const { models } = require("mongoose");
 const app = express();
 
 /* Settings */
-app.set("port", 5050);
+app.set("port", process.env.PORT || 5050);
 
 /* Middlewares */
 app.use(cors());
